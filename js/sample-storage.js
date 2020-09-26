@@ -260,7 +260,7 @@ const filtersContent = `
 
 <div class="d-flex flex-row row justify-content-start">
   <button class="btn btn-lg btn-primary m-3" onClick="setFilters()">
-    FIlter Posts
+    Filter Posts
   </button>
   <button class="btn btn-lg btn-danger m-3" onClick="resetFilters()">
     Reset Filters

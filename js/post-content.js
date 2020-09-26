@@ -1,110 +1,110 @@
 /* State Modification */
 const changeDate = (id, index) => {
-    let post = getPost(id);
-    post.dateIndex = parseInt(index);
-    editPost(id, post);
+  let post = getPost(id);
+  post.dateIndex = parseInt(index);
+  editPost(id, post);
 }
 
 const togglePostLike = (id) => {
-    let post = getPost(id);
-    if (post.isLiked) {
-        post.isLiked = false;
-        post.likes--;
-    } else {
-        post.isLiked = true;
-        post.likes++;
-    }
+  let post = getPost(id);
+  if (post.isLiked) {
+    post.isLiked = false;
+    post.likes--;
+  } else {
+    post.isLiked = true;
+    post.likes++;
+  }
 
-    editPost(id, post);
+  editPost(id, post);
 }
 
 const toggleInstructorLike = (id) => {
-    let post = getPost(id);
-    if (post.instructorAnswer.isLiked) {
-        post.instructorAnswer.isLiked = false;
-        post.instructorAnswer.likes --;
-    } else {
-        post.instructorAnswer.isLiked = true;
-        post.instructorAnswer.likes ++;
-    }
+  let post = getPost(id);
+  if (post.instructorAnswer.isLiked) {
+    post.instructorAnswer.isLiked = false;
+    post.instructorAnswer.likes--;
+  } else {
+    post.instructorAnswer.isLiked = true;
+    post.instructorAnswer.likes++;
+  }
 
-    editPost(id, post);
+  editPost(id, post);
 }
 
 const toggleStudentLike = (id) => {
-    let post = getPost(id);
-    if (post.studentAnswer.isLiked) {
-        post.studentAnswer.isLiked = false;
-        post.studentAnswer.likes --;
-    } else {
-        post.studentAnswer.isLiked = true;
-        post.studentAnswer.likes ++;
-    }
+  let post = getPost(id);
+  if (post.studentAnswer.isLiked) {
+    post.studentAnswer.isLiked = false;
+    post.studentAnswer.likes--;
+  } else {
+    post.studentAnswer.isLiked = true;
+    post.studentAnswer.likes++;
+  }
 
-    editPost(id, post);
+  editPost(id, post);
 }
 
 const togglePostFavorite = (id) => {
-    let post = getPost(id);
-    if (post.isFavorite) {
-        post.isFavorite = false;
-    } else {
-        post.isFavorite = true;
-    }
+  let post = getPost(id);
+  if (post.isFavorite) {
+    post.isFavorite = false;
+  } else {
+    post.isFavorite = true;
+  }
 
-    editPost(id, post);
+  editPost(id, post);
 }
 
 const toggleDiscussionLike = (id, index) => {
-    let post = getPost(id);
-    if (post.followupDiscussions[index].isLiked) {
-        post.followupDiscussions[index].isLiked = false;
-        post.followupDiscussions[index].likes --;
-    } else {
-        post.followupDiscussions[index].isLiked = true;
-        post.followupDiscussions[index].likes ++;
-    }
+  let post = getPost(id);
+  if (post.followupDiscussions[index].isLiked) {
+    post.followupDiscussions[index].isLiked = false;
+    post.followupDiscussions[index].likes--;
+  } else {
+    post.followupDiscussions[index].isLiked = true;
+    post.followupDiscussions[index].likes++;
+  }
 
-    editPost(id, post);
+  editPost(id, post);
 }
 
 const toggleDiscussionResolve = (id, index) => {
-    let post = getPost(id);
-    if (!post.followupDiscussions[index].isResolved) {
-        post.followupDiscussions[index].isResolved = true;
-        post.unresolved --;
-        alert(2);
-    } else {
-        post.followupDiscussions[index].isResolved = false;
-        post.unresolved ++;
-        alert(3);
-    }
+  let post = getPost(id);
+  if (!post.followupDiscussions[index].isResolved) {
+    post.followupDiscussions[index].isResolved = true;
+    post.unresolved--;
+    alert(2);
+  } else {
+    post.followupDiscussions[index].isResolved = false;
+    post.unresolved++;
+    alert(3);
+  }
 
-    editPost(id, post);
+  editPost(id, post);
 }
 
 const createFollowup = (id) => {
-    let post = getPost(id);
-    post.unresolved ++;
-    const newFollowup = {
-        content: post.content, 
-        index: post.followupDiscussions.length, 
-        isLiked: false, 
-        likes: 0, 
-        isResolved: false
-    };
-    post.followupDiscussions.push(newFollowup);
-    alert(1);
-    editPost(id, post);
+  let post = getPost(id);
+  post.unresolved++;
+  const newFollowup = {
+    content: post.content,
+    index: post.followupDiscussions.length,
+    isLiked: false,
+    likes: 0,
+    isResolved: false
+  };
+  post.followupDiscussions.push(newFollowup);
+  alert(1);
+  editPost(id, post);
 }
 
 /* Getters  */
 const getDate = (id, index) => {
-    return getPost(id).dates[index];
+  return getPost(id).dates[index];
 }
 
 const generatePostContent = (post) => {
-    return `
+  return `
     <div class="p-2 mt-3 bg-heading post-slider">
     <div class="row">
       <div class="mx-2 col-3 my-auto">
@@ -178,7 +178,7 @@ const generatePostContent = (post) => {
         </div>
         <div class="row">
         <div class="col-3 d-flex align-items-center text-align-center">
-        <i class="fas fa-user-circle fa-2x" style="color:black;"></i> User
+        <i class="fas fa-user-circle fa-2x" style="color:black;"></i> &nbsp; User
       </div>
           <div class="col-9">
           </div>
@@ -227,7 +227,7 @@ const generatePostContent = (post) => {
           <h5 class="my-auto">Post</h5>
         </div>
         <div class="col my-auto text-right">
-          <div><i class="far fa-thumbs-up"></i>${post.instructorAnswer.likes}</div>
+          <div><i class="far fa-thumbs-up"></i> ${post.instructorAnswer.likes}</div>
         </div>
       </div>
 
@@ -241,7 +241,7 @@ const generatePostContent = (post) => {
       </div>
       <div class="row">
       <div class="col-3 d-flex align-items-center text-align-center">
-      <i class="fas fa-user-circle fa-2x" style="color:black;"></i> User
+      <i class="fas fa-user-circle fa-2x" style="color:black;"></i> &nbsp; User
     </div>
         <div class="col-9">
         </div>
@@ -290,7 +290,8 @@ const generatePostContent = (post) => {
         </div>
         <div class="row">
         <div class="col-3 d-flex align-items-center text-align-center">
-        <i class="fas fa-user-circle fa-2x" style="color:black;"></i> User
+        <i class="fas fa-user-circle fa-2x" style="color:black;"></i> 
+        &nbsp; User
       </div>
           <div class="col-9">
           </div>
@@ -319,12 +320,12 @@ const generatePostContent = (post) => {
 
     <div class="card post-content">
 
-      ${ post.followupDiscussions.map(discussion => `
+      ${post.followupDiscussions.map(discussion => `
       <div class="col">
       <div class="col card-body bg-buttons my-3">
         <div class="d-flex flex-row row">
           <div class="d-flex px-2 align-items-center text-align-center">
-            <i class="fas fa-user-circle fa-2x" style="color:black;"></i> User
+            <i class="fas fa-user-circle fa-2x" style="color:black;"></i> &nbsp; User
           </div>
           <div class="p-2 mx-2" style="color: white; background: ${discussion.isResolved ? 'green' : 'red'};">
            ${discussion.isResolved ? 'Resolved' : 'Unresolved'}
@@ -365,7 +366,7 @@ const generatePostContent = (post) => {
       <div class="col card-body bg-buttons my-3">
         <div class="d-flex flex-row row">
         <div class="d-flex p-2 align-items-center text-align-center">
-        <i class="fas fa-user-circle fa-2x" style="color:black;"></i> User
+        <i class="fas fa-user-circle fa-2x" style="color:black;"></i> &nbsp; User
       </div>
         </div>
 
