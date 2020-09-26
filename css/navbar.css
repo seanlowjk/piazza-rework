@@ -1,0 +1,28 @@
+.navbar-brand img {
+    height: 100%;
+    margin-right: 20px;
+}
+
+.navbar .dropdown {
+    position: relative;
+}
+
+.navbar-collapse {
+    float: left;
+    width: 100%;
+    clear: both;
+}
+
+.dropdown-post-button {
+    color: white;
+}
+
+.dropdown-post-button:hover {
+    background-color: #68A5D1;
+    color: white;
+}
+
+.dropdown-post-button:active {
+    background-color: #285e8e;
+    color: white;
+}

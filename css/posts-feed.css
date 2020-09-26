@@ -1,0 +1,88 @@
+.feed {
+    height: 95vh;
+    width: 35vw;
+    max-width: 400px;
+    background-color: #F0F7FA;
+}
+
+.feed-content {
+    height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.feed-header {
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.dropdowner {
+    height: 3.5rem;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.new-summary {
+    background-color: #B6D7A8;
+    color: black;
+}
+
+.post-summary {
+    background-color: white;
+    color: black;
+}
+
+.current-summary {
+    background-color: #68A5D1;
+    color: black;
+    text-decoration: none;
+}
+
+.post-summary:hover,
+.new-summary:hover,
+.current-summary:hover {
+    background-color: #68A5D1;
+    color: black;
+    text-decoration: none;
+}
+
+.post-summary:active,
+.new-summary:active,
+.current-summary:active {
+    background-color: #68A5D1;
+    color: black;
+    text-decoration: none;
+}
+
+.post-summary-card {
+    width: 35vw;
+    min-width: 200px;
+}
+
+.truncated-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.truncated-header {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+@media only screen and (max-width: 480px) {
+    .feed {
+        max-width: 180px;
+    }
+}
+
+@media only screen and (max-width: 961px) {
+    .feed {
+        max-width: 360px;
+    }
+}

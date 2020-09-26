@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no">
+
+  <!-- External Imports -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+
+  <!-- Font Awesome Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/solid.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/regular.min.css">
+
+  <!-- Bootstrap Imports -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+
+  <!-- Bootstrap-Silder Imports -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.1/bootstrap-slider.js"
+    integrity="sha512-tU/YdxpSBI0Nrlb3SRenbDcviXMos/zZ7Fw7MKwyVa70EAITeoGZuhGG+hTCvDs8niFEQImCn0HkAdNFMHPCBA=="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.1/css/bootstrap-slider.css"
+    integrity="sha512-tJyWBsz8XrGbSW2P1yGGGavX5PEz7gY9+UF8egurLyLOtcMfINVjd4a7j4qoFzUaV58MsGLl3pjXdAZwLZPu5A=="
+    crossorigin="anonymous" />
+
+  <!-- My Impots -->
+  <script src="./js/sample-storage.js"></script>
+  <script src="./js/alerts.js"></script>
+  <script src="./js/main-content.js"></script>
+  <script src="./js/post-content.js"></script>
+  <script src="./js/navbar.js"></script>
+  <script src="./js/filters.js"></script>
+  <script src="./js/drafts.js"></script>
+  <script src="./js/posts.js"></script>
+  <script src="./js/posts_feed.js"></script>
+
+  <!-- Overriding CSS for Piazza-->
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/drafts.css" />
+  <link rel="stylesheet" href="./css/main-content.css" />
+  <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="stylesheet" href="./css/posts-feed.css" />
+
+  <title>Piazza</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <piazza-nav-bar></piazza-nav-bar>
+
+    <div class="d-flex flex-row bd-highlight mb-3">
+
+      <div class="col feed">
+        <div class="row p-2 bg-feed feed-header">
+          <div class="col text-center">
+            <a tabindex="0" id="icons-popover" role="button" rel="popover" data-toggle="popover" data-trigger="focus"
+              data-content="">
+              Posts Feed
+              <i class="fas fa-question-circle"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="row feed-content">
+
+          <div class="col">
+            <div class="dropdowner row bg-primary items-center">
+              <div class="col ml-2"> Pinned </div>
+              <div class="col text-right mr-3">
+                <a onClick="toggleDropdown('dropdown-button-0', 'pinned')">
+                  <i id="dropdown-button-0" class="fas fa-caret-down fa-2x "></i>
+                </a>
+              </div>
+            </div>
+
+            <ul class="row list-group" id="pinned">
+
+            </ul>
+
+            <div class="dropdowner row bg-primary items-center">
+              <div class="col ml-2"> Favorites </div>
+              <div class="col text-right mr-3">
+                <a onClick="toggleDropdown('dropdown-button-1', 'favorites')">
+                  <i id="dropdown-button-1" class="fas fa-caret-down fa-2x "></i>
+                </a>
+              </div>
+            </div>
+
+            <ul class="row list-group" id="favorites">
+
+            </ul>
+
+            <div class="dropdowner row bg-primary items-center">
+              <div class="col ml-2"> This Week </div>
+              <div class="col text-right mr-3">
+                <a onClick="toggleDropdown('dropdown-button-2', 'list-0')">
+                  <i id="dropdown-button-2" class="fas fa-caret-down fa-2x "></i>
+                </a>
+              </div>
+            </div>
+
+            <ul class="row list-group" id="list-0">
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col main-content bg-main" id="main-content">
+      
+      </div>
+    </div>
+</body>
+
+
+</html>

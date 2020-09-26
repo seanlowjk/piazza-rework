@@ -1,0 +1,77 @@
+.main-content {
+    height: 95vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 65vw;
+}
+
+.modal-body {
+    height: 10vh;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider-selection {
+    background: #68A5D1;
+}
+
+.tooltip {
+    opacity: 1;
+}
+
+.tooltip.in {
+    opacity: 1;
+}
+
+.tooltip-inner {
+    background-color: #68A5D1;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: #68A5D1;
+}
+
+.slider-handle {
+    background-image: linear-gradient(to bottom, #68A5D1 0%, #68A5D1 100%);
+    background-color: black;
+}
+
+.slider.slider-horizontal {
+    width: 30vw !important;
+}
+
+.main-filters {
+    background-color: white;
+    margin-top: 5vh;
+    width: 50vw;
+}
+
+.post-slider {
+    color: white;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.post-header {
+    color: white;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-weight: bold;
+}
+
+.question-header {
+    padding-left: 1.25rem;
+}
+
+.post-content {
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.post-buttons {
+    padding-left: 1.25rem;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
