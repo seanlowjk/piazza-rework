@@ -1,7 +1,7 @@
 /* State Modifications */
 const addView = (id) => {
   let post = getPost(id);
-  post.views ++;
+  post.views++;
 
   if (post.isUnread) {
     post.isUnread = false;

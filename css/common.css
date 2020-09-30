@@ -110,10 +110,18 @@ body {
     border-radius: 0px;
 }
 
-.card,
 .btn,
 .form-control {
     border-radius: 0;
+}
+
+.card {
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+a {
+    cursor: pointer;
 }
 
 input[type="radio"] {
@@ -163,7 +171,6 @@ input[type="radio"] {
 }
 
 @media only screen and (max-width: 600px) {
-
     body,
     .container-fluid {
         width: 150vw;

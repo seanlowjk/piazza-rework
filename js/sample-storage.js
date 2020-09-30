@@ -56,7 +56,7 @@ const samplePost = {
 };
 
 const samplePost2 = {
-    id: 2,
+    id: 4,
     title: "Post",
     dateIndex: 0,
     dates: ["20/9/20"],
@@ -101,7 +101,7 @@ const samplePost2 = {
 
 
 const samplePost3 = {
-    id: 4,
+    id: 2,
     title: "Post",
     dateIndex: 0,
     dates: ["8/9/20", "12/9/20", "14/9/20", "16/9/20", "20/9/20"],
@@ -270,6 +270,9 @@ const filtersContent = `
 </div>
 `;
 
+/*
+  Simple Abstraction for location.reload()
+*/
 function hardReload() {
     location.reload();
 }
@@ -329,6 +332,10 @@ function generateTag(bool, id, val)  {
 };
 
 $(document).ready(function () {
+    /*
+      If never set before, set all the necessary attributes 
+      with their default values. 
+    */
     if (!localStorage.posts) {
         localStorage.posts = JSON.stringify([samplePost, samplePost2, samplePost3, sampleNote]);
     }
@@ -344,6 +351,10 @@ $(document).ready(function () {
     if (!localStorage.filter) {
         localStorage.filter = 'none';
     }
+
+    /*
+      Filter posts based on current filter. 
+    */
 
     let posts = [];
 
@@ -365,10 +376,13 @@ $(document).ready(function () {
         }
     });
 
+    /*
+      Dynaically change main content whenever necessary
+      based on the mainContentNumber attribute. 
+    */
     if (!localStorage.mainContentNumber) {
         localStorage.mainContentNumber = 0;
     }
-
 
     if (localStorage.mainContentNumber == 0) {
         $("#main-content").append(generateFilters());
@@ -384,6 +398,9 @@ $(document).ready(function () {
         $("#main-content").append(filtersContent);
     }
 
+    /*
+      Restore Filter Checkelist
+    */
     for (let i = 1; i <= 4; i++) {
         let elem = $(`#gridRadios${i}`)[0];
         let here = document.getElementById(`gridRadios${i}`);
@@ -396,6 +413,9 @@ $(document).ready(function () {
         }
     }
 
+    /*
+      Restore Filter Tags
+    */
     let tags = JSON.parse(localStorage.tags);
     let tag_vals = ["CS1101S", "CS1231", "CS3240", "Design", "Majestic", "UIUX"];
 

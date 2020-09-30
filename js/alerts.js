@@ -45,6 +45,12 @@ const alert = (id) => {
     localStorage.alert = id;
 };
 
+/*
+    Idea: 
+
+    Based on the alert attribute in the local storage, 
+    produce the appropriate alert. 
+*/
 $(document).ready(function () {
     if (!localStorage.alert) {
         localStorage.alert = 0;
