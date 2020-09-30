@@ -1,191 +1,191 @@
 const sampleFollowup = {
-    content: `
+  content: `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
         consequat.
     `,
-    index: 0,
-    isLiked: false,
-    likes: 0,
-    isResolved: false
+  index: 0,
+  isLiked: false,
+  likes: 0,
+  isResolved: false
 };
 
 const samplePost = {
-    id: 3,
-    title: "Post",
-    dateIndex: 2,
-    dates: ["16/9/20", "18/9/20", "20/9/20"],
-    isNote: false,
-    isUnread: true,
-    isLiked: false,
-    isFavorite: false,
-    unresolved: 1,
-    list: "#pinned",
-    content: `
+  id: 3,
+  title: "Post",
+  dateIndex: 2,
+  dates: ["16/9/20", "18/9/20", "20/9/20"],
+  isNote: false,
+  isUnread: true,
+  isLiked: false,
+  isFavorite: false,
+  unresolved: 1,
+  list: "#pinned",
+  content: `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
       consequat.
       `,
-    views: 18,
-    likes: 18,
-    studentAnswer: {
-        content: `
+  views: 18,
+  likes: 18,
+  studentAnswer: {
+    content: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
             consequat.
         `,
-        isLiked: false,
-        likes: 20
-    },
-    instructorAnswer: {
-        content: `
+    isLiked: false,
+    likes: 20
+  },
+  instructorAnswer: {
+    content: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
             consequat.
         `,
-        isLiked: false,
-        likes: 20
-    },
-    followupDiscussions: [
-        sampleFollowup
-    ]
+    isLiked: false,
+    likes: 20
+  },
+  followupDiscussions: [
+    sampleFollowup
+  ]
 };
 
 const samplePost2 = {
-    id: 4,
-    title: "Post",
-    dateIndex: 0,
-    dates: ["20/9/20"],
-    isNote: false,
-    isUnread: true,
-    isLiked: false,
-    isFavorite: false,
-    unresolved: 0,
-    list: "#list-0",
-    content: `
+  id: 4,
+  title: "Post",
+  dateIndex: 0,
+  dates: ["20/9/20"],
+  isNote: false,
+  isUnread: true,
+  isLiked: false,
+  isFavorite: false,
+  unresolved: 0,
+  list: "#list-0",
+  content: `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
       consequat.
       `,
-    views: 18,
-    likes: 18,
-    studentAnswer: {
-        content: `
+  views: 18,
+  likes: 18,
+  studentAnswer: {
+    content: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
             consequat.
         `,
-        isLiked: false,
-        likes: 20
-    },
-    instructorAnswer: {
-        content: `
+    isLiked: false,
+    likes: 20
+  },
+  instructorAnswer: {
+    content: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
             consequat.
         `,
-        isLiked: false,
-        likes: 20
-    },
-    followupDiscussions: [
+    isLiked: false,
+    likes: 20
+  },
+  followupDiscussions: [
 
-    ]
+  ]
 };
 
 
 const samplePost3 = {
-    id: 2,
-    title: "Post",
-    dateIndex: 0,
-    dates: ["8/9/20", "12/9/20", "14/9/20", "16/9/20", "20/9/20"],
-    isNote: false,
-    isUnread: true,
-    isLiked: false,
-    isFavorite: false,
-    unresolved: 0,
-    list: "#list-0",
-    content: `
+  id: 2,
+  title: "Post",
+  dateIndex: 0,
+  dates: ["8/9/20", "12/9/20", "14/9/20", "16/9/20", "20/9/20"],
+  isNote: false,
+  isUnread: true,
+  isLiked: false,
+  isFavorite: false,
+  unresolved: 0,
+  list: "#list-0",
+  content: `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
       consequat.
       `,
-    views: 18,
-    likes: 18,
-    studentAnswer: {
-        content: `
+  views: 18,
+  likes: 18,
+  studentAnswer: {
+    content: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
             consequat.
         `,
-        isLiked: false,
-        likes: 20
-    },
-    instructorAnswer: {
-        content: `
+    isLiked: false,
+    likes: 20
+  },
+  instructorAnswer: {
+    content: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
             consequat.
         `,
-        isLiked: false,
-        likes: 20
-    },
-    followupDiscussions: [
+    isLiked: false,
+    likes: 20
+  },
+  followupDiscussions: [
 
-    ]
+  ]
 };
 
 const sampleNote = {
-    id: 1,
-    title: "Note",
-    dateIndex: 2,
-    dates: ["16/9/20", "18/9/20", "20/9/20"],
-    isNote: true,
-    isUnread: true,
-    isLiked: false,
-    isFavorite: false,
-    unresolved: 0,
-    list: "#pinned",
-    content: `
+  id: 1,
+  title: "Note",
+  dateIndex: 2,
+  dates: ["16/9/20", "18/9/20", "20/9/20"],
+  isNote: true,
+  isUnread: true,
+  isLiked: false,
+  isFavorite: false,
+  unresolved: 0,
+  list: "#pinned",
+  content: `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
         consequat.
     `,
-    views: 18,
-    likes: 18,
-    studentAnswer: null,
-    instructorAnswer: null,
-    followupDiscussions: []
+  views: 18,
+  likes: 18,
+  studentAnswer: null,
+  instructorAnswer: null,
+  followupDiscussions: []
 };
 
 const sampleDraft0 = {
-    id: 0, 
-    content: `
+  id: 0,
+  content: `
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
     consequat.`,
-    isDeleted: false
+  isDeleted: false
 }
 
 const sampleDraft1 = {
-    id: 1, 
-    content: `
+  id: 1,
+  content: `
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
     consequat.`,
-    isDeleted: false
+  isDeleted: false
 }
 
 const draftsContainer = `
@@ -274,57 +274,57 @@ const filtersContent = `
   Simple Abstraction for location.reload()
 */
 function hardReload() {
-    location.reload();
+  location.reload();
 }
 
 function setClass(classString) {
-    if (localStorage.classSelected) {
-        localStorage.classSelected = String(classString);
-    } else {
-        localStorage.classSelected = "CS1191S";
-    }
-    document.getElementById("dropdownMenuButton").innerHTML = `Class: ${localStorage.classSelected} `;
+  if (localStorage.classSelected) {
+    localStorage.classSelected = String(classString);
+  } else {
+    localStorage.classSelected = "CS1191S";
+  }
+  document.getElementById("dropdownMenuButton").innerHTML = `Class: ${localStorage.classSelected} `;
 };
 
 function getPost(id) {
-    let posts = JSON.parse(localStorage.posts);
+  let posts = JSON.parse(localStorage.posts);
 
-    for (let i = 0; i < posts.length; i++) {
-        if (posts[i].id == id) {
-            return posts[i];
-        }
+  for (let i = 0; i < posts.length; i++) {
+    if (posts[i].id == id) {
+      return posts[i];
     }
+  }
 
-    return null;
+  return null;
 }
 
 function editPost(id, post) {
-    let posts = JSON.parse(localStorage.posts);
+  let posts = JSON.parse(localStorage.posts);
 
-    for (let i = 0; i < posts.length; i++) {
-        if (posts[i].id == id) {
-            posts[i] = post;
-        }
+  for (let i = 0; i < posts.length; i++) {
+    if (posts[i].id == id) {
+      posts[i] = post;
     }
+  }
 
-    localStorage.posts = JSON.stringify(posts);
-    hardReload();
+  localStorage.posts = JSON.stringify(posts);
+  hardReload();
 }
 
 const deleteDraft = (id) => {
-    let drafts = JSON.parse(localStorage.drafts);
-    for (let i = 0; i < drafts.length; i++) {
-        if (drafts[i].id == id) {
-            drafts[i].isDeleted = true;
-        }
+  let drafts = JSON.parse(localStorage.drafts);
+  for (let i = 0; i < drafts.length; i++) {
+    if (drafts[i].id == id) {
+      drafts[i].isDeleted = true;
     }
+  }
 
-    localStorage.drafts = JSON.stringify(drafts);
-    hardReload();
+  localStorage.drafts = JSON.stringify(drafts);
+  hardReload();
 }
 
-function generateTag(bool, id, val)  {
-    return `
+function generateTag(bool, id, val) {
+  return `
     <label class="btn btn-secondary m-2" id="tag${id}">
     <input type="checkbox" ${bool ? 'checked' : ''}> ${val}
   </label>
@@ -332,94 +332,94 @@ function generateTag(bool, id, val)  {
 };
 
 $(document).ready(function () {
-    /*
-      If never set before, set all the necessary attributes 
-      with their default values. 
-    */
-    if (!localStorage.posts) {
-        localStorage.posts = JSON.stringify([samplePost, samplePost2, samplePost3, sampleNote]);
-    }
+  /*
+    If never set before, set all the necessary attributes 
+    with their default values. 
+  */
+  if (!localStorage.posts) {
+    localStorage.posts = JSON.stringify([samplePost, samplePost2, samplePost3, sampleNote]);
+  }
 
-    if (!localStorage.drafts) {
-        localStorage.drafts = JSON.stringify([sampleDraft0, sampleDraft1]);
-    }
+  if (!localStorage.drafts) {
+    localStorage.drafts = JSON.stringify([sampleDraft0, sampleDraft1]);
+  }
 
-    if (!localStorage.tags) {
-        localStorage.tags = JSON.stringify([]);
-    }
+  if (!localStorage.tags) {
+    localStorage.tags = JSON.stringify([]);
+  }
 
-    if (!localStorage.filter) {
-        localStorage.filter = 'none';
-    }
+  if (!localStorage.filter) {
+    localStorage.filter = 'none';
+  }
 
-    /*
-      Filter posts based on current filter. 
-    */
+  /*
+    Filter posts based on current filter. 
+  */
 
-    let posts = [];
+  let posts = [];
 
-    if (localStorage.filter === 'unread') {
-        posts = JSON.parse(localStorage.posts).filter(isUnread);
-    } else if (localStorage.filter === 'unanswered') {
-        posts = JSON.parse(localStorage.posts).filter(isUnanswered);
-    } else if (localStorage.filter === 'followups') {
-        posts = JSON.parse(localStorage.posts).filter(isClear);
+  if (localStorage.filter === 'unread') {
+    posts = JSON.parse(localStorage.posts).filter(isUnread);
+  } else if (localStorage.filter === 'unanswered') {
+    posts = JSON.parse(localStorage.posts).filter(isUnanswered);
+  } else if (localStorage.filter === 'followups') {
+    posts = JSON.parse(localStorage.posts).filter(isClear);
+  } else {
+    posts = JSON.parse(localStorage.posts);
+  }
+
+  posts.forEach(post => {
+    if (post.isFavorite) {
+      $("#favorites").append(generatePostSummary(post));
     } else {
-        posts = JSON.parse(localStorage.posts);
+      $(post.list).append(generatePostSummary(post));
     }
+  });
 
-    posts.forEach(post => {
-        if (post.isFavorite) {
-            $("#favorites").append(generatePostSummary(post));
-        } else {
-            $(post.list).append(generatePostSummary(post));
-        }
-    });
+  /*
+    Dynaically change main content whenever necessary
+    based on the mainContentNumber attribute. 
+  */
+  if (!localStorage.mainContentNumber) {
+    localStorage.mainContentNumber = 0;
+  }
 
-    /*
-      Dynaically change main content whenever necessary
-      based on the mainContentNumber attribute. 
-    */
-    if (!localStorage.mainContentNumber) {
-        localStorage.mainContentNumber = 0;
+  if (localStorage.mainContentNumber == 0) {
+    $("#main-content").append(generateFilters());
+  } else if (localStorage.mainContentNumber > 0) {
+    $("#main-content").append(generatePostContent(getPost(localStorage.mainContentNumber)));
+  } else if (localStorage.mainContentNumber == -1) {
+    let theDrafts = JSON.parse(localStorage.drafts);
+    $("#main-content").append(draftsContainer);
+    for (let i = 0; i < theDrafts.length; i++) {
+      $("#drafts-content").append(generateDraft(theDrafts[i]));
     }
+  } else if (localStorage.mainContentNumber == -2) {
+    $("#main-content").append(filtersContent);
+  }
 
-    if (localStorage.mainContentNumber == 0) {
-        $("#main-content").append(generateFilters());
-    } else if (localStorage.mainContentNumber > 0) {
-        $("#main-content").append(generatePostContent(getPost(localStorage.mainContentNumber)));
-    } else if (localStorage.mainContentNumber == -1) {
-        let theDrafts = JSON.parse(localStorage.drafts);
-        $("#main-content").append(draftsContainer);
-        for (let i = 0; i < theDrafts.length; i++) {
-            $("#drafts-content").append(generateDraft(theDrafts[i]));
-        }
-    } else if (localStorage.mainContentNumber == -2) {
-        $("#main-content").append(filtersContent);
+  /*
+    Restore Filter Checkelist
+  */
+  for (let i = 1; i <= 4; i++) {
+    let elem = $(`#gridRadios${i}`)[0];
+    let here = document.getElementById(`gridRadios${i}`);
+    if (!here) {
+      continue;
     }
-
-    /*
-      Restore Filter Checkelist
-    */
-    for (let i = 1; i <= 4; i++) {
-        let elem = $(`#gridRadios${i}`)[0];
-        let here = document.getElementById(`gridRadios${i}`);
-        if (!here) {
-            continue;
-        }
-        if (elem.value === localStorage.filter) {
-            here.checked = true;
-            break;
-        }
+    if (elem.value === localStorage.filter) {
+      here.checked = true;
+      break;
     }
+  }
 
-    /*
-      Restore Filter Tags
-    */
-    let tags = JSON.parse(localStorage.tags);
-    let tag_vals = ["CS1101S", "CS1231", "CS3240", "Design", "Majestic", "UIUX"];
+  /*
+    Restore Filter Tags
+  */
+  let tags = JSON.parse(localStorage.tags);
+  let tag_vals = ["CS1101S", "CS1231", "CS3240", "Design", "Majestic", "UIUX"];
 
-    for (let i = 0; i < 6; i++) {
-        $("#my-tags").append(generateTag(tags.includes(tag_vals[i]), i, tag_vals[i]));
-    }
+  for (let i = 0; i < 6; i++) {
+    $("#my-tags").append(generateTag(tags.includes(tag_vals[i]), i, tag_vals[i]));
+  }
 });

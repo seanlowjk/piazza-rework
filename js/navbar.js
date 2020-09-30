@@ -1,11 +1,11 @@
 class PiazzaNavBar extends HTMLElement {
-    constructor() {
-      super();
-  
-      this.classSelected = localStorage.classSelected || 'CS1101S';
-  
-      window.onload = () => {
-        this.innerHTML = `<div id="navigation-bar">
+  constructor() {
+    super();
+
+    this.classSelected = localStorage.classSelected || 'CS1101S';
+
+    window.onload = () => {
+      this.innerHTML = `<div id="navigation-bar">
         <nav class="navbar navbar-expand-lg navbar-light bg-primary">
           <a class="navbar-brand" onClick="resetContentAndFilters();" href="index.html">
             <img src="icons/piazza_logo.svg" alt="Piazza Logo" height="130px" width="70px" />
@@ -73,13 +73,13 @@ class PiazzaNavBar extends HTMLElement {
           </ul>
         </nav>
       </div>`;
-      };
-  
-    }
+    };
+
   }
-  
-  customElements.define('piazza-nav-bar',
-    PiazzaNavBar
-  );
-  
+}
+
+customElements.define('piazza-nav-bar',
+  PiazzaNavBar
+);
+
 

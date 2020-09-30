@@ -20,7 +20,7 @@ function setFilters() {
     }
 
     alert(4);
-    
+
     hardReload();
 }
 
