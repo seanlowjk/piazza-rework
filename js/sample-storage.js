@@ -281,7 +281,7 @@ function setClass(classString) {
   if (localStorage.classSelected) {
     localStorage.classSelected = String(classString);
   } else {
-    localStorage.classSelected = "CS1191S";
+    localStorage.classSelected = "CS1101S";
   }
   document.getElementById("dropdownMenuButton").innerHTML = `Class: ${localStorage.classSelected} `;
 };
