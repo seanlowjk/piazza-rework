@@ -72,7 +72,7 @@
     border-color: #285e8e;
 }
 
-.card {
+.current-summary, .post-summary, .new-summary {
     border-radius: 10px;
     margin: 10px 10px 10px 10px;
 }
