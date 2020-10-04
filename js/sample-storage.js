@@ -1,9 +1,6 @@
 const sampleFollowup = {
   content: `
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-        consequat.
+Good Point, I think it would be good if we could raise this up!
     `,
   index: 0,
   isLiked: false,
@@ -23,29 +20,23 @@ const samplePost = {
   unresolved: 1,
   list: "#pinned",
   content: `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-      consequat.
+I was wondering how could we do better as a cohort when it comes to design thinking?
+Would it be great if we had more group activites to go through examples by practising them out? 
       `,
   views: 18,
   likes: 18,
   studentAnswer: {
     content: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat.
+Yes, but I feel a bit shy for doing so some times... 
         `,
     isLiked: false,
     likes: 20
   },
   instructorAnswer: {
     content: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat.
+Hi, We have taken your feedback. For future weeks, we will split you all into your breakout rooms and plan some
+simple exercises for the cohort to do! Through examples and practising, we hope that you can enjoy your time 
+in this module while gaining insights!
         `,
     isLiked: false,
     likes: 20
@@ -67,29 +58,23 @@ const samplePost2 = {
   unresolved: 0,
   list: "#list-0",
   content: `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-      consequat.
+  I was wondering how could we do better as a cohort when it comes to design thinking?
+  Would it be great if we had more group activites to go through examples by practising them out? 
       `,
   views: 18,
   likes: 18,
   studentAnswer: {
     content: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat.
+    Yes, but I feel a bit shy for doing so some times... 
         `,
     isLiked: false,
     likes: 20
   },
   instructorAnswer: {
     content: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat.
+    Hi, We have taken your feedback. For future weeks, we will split you all into your breakout rooms and plan some
+    simple exercises for the cohort to do! Through examples and practising, we hope that you can enjoy your time 
+    in this module while gaining insights!
         `,
     isLiked: false,
     likes: 20
@@ -112,10 +97,7 @@ const samplePost3 = {
   unresolved: 0,
   list: "#list-0",
   content: `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-      consequat.
+  Yes, but I feel a bit shy for doing so some times... 
       `,
   views: 18,
   likes: 18,
@@ -131,10 +113,9 @@ const samplePost3 = {
   },
   instructorAnswer: {
     content: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat.
+    Hi, We have taken your feedback. For future weeks, we will split you all into your breakout rooms and plan some
+    simple exercises for the cohort to do! Through examples and practising, we hope that you can enjoy your time 
+    in this module while gaining insights!
         `,
     isLiked: false,
     likes: 20
@@ -156,10 +137,8 @@ const sampleNote = {
   unresolved: 0,
   list: "#pinned",
   content: `
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-        consequat.
+Hi All, just wanted to say that this module is really interesting and that I want to thank everyone
+for being great contributors! Kudos!
     `,
   views: 18,
   likes: 18,
@@ -171,20 +150,14 @@ const sampleNote = {
 const sampleDraft0 = {
   id: 0,
   content: `
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-    consequat.`,
+It would be great if we can have free marks, but the`,
   isDeleted: false
 }
 
 const sampleDraft1 = {
   id: 1,
   content: `
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et  magna aliqua. Ut enim ad minim veniam, 
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-    consequat.`,
+Just wanted to ask, when will we get back o`,
   isDeleted: false
 }
 

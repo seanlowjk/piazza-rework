@@ -187,21 +187,21 @@ const generatePostContent = (post) => {
     </div>
 
     <div class="d-flex flex-row row bg-buttons post-buttons">
-      <div class="px-2">
+      <div class="pl-2 pr-5">
         <a class="mx-auto" onClick="togglePostLike(${post.id})" >
           <i class="${post.isLiked ? 'fas' : 'far'} fa-thumbs-up"
           style="color: ${post.isLiked ? '#407BA7' : 'black'};"></i>
           <p style="color: black;">${post.isLiked ? 'Unlike' : 'Like'}</p>
         </a>
       </div>
-      <div class="px-2">
+      <div class="pl-2 pr-5">
       <a class="mx-auto" onClick="togglePostFavorite(${post.id})" >
             <i class="${post.isFavorite ? 'fas' : 'far'} fa-star" 
                 style="color: ${post.isFavorite ? '#e3b829' : 'black'};"></i>
             <p style="color: black;">${post.isFavorite ? 'Unfavorite' : 'Favourite'}</p>
         </a>
       </div>
-      <div class="px-2">
+      <div class="pl-2">
       <a tabindex="0" id="copy-popover" role="button" rel="popover" data-toggle="popover" data-trigger="focus"
       data-content="">
       
@@ -338,14 +338,14 @@ const generatePostContent = (post) => {
           ${discussion.content}
         </div>
         <div class="d-flex flex-row row px-2">
-          <div class="px-2">
+          <div class="pl-2 pr-5">
           <a class="mx-auto" onClick="toggleDiscussionLike(${post.id}, ${discussion.index})" >
                 <i class="${discussion.isLiked ? 'fas' : 'far'} fa-thumbs-up"
                 style="color: ${discussion.isLiked ? '#407BA7' : 'black'};"></i>
                 <p style="color: black;">${discussion.isLiked ? 'Unlike' : 'Like'}</p>
             </a>
           </div>
-          <div class="px-2">
+          <div class="pl-2">
             <a class="mx-auto" onClick="toggleDiscussionResolve(${post.id}, ${discussion.index})"
                 style="color: black;">
             <i class="fas fa-wrench"></i>
