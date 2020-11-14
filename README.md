@@ -14,6 +14,13 @@ Prototype Link: [here](https://www.figma.com/proto/q9RIUvkZb1OPE3PA3rLMvL/CS3240
 As a user of Piazza, I felt that there were some interactions that were lacking from the original website. 
 
 As a result, I wanted to redesign certain features and components such that it would make it 
-more user-friednly 
+more user-friendly. 
 
+## Write-ups 
+
+Wireframes Writeup: [here](https://seanlowjk.github.io/piazza-rework/writeups/Wireframes_Writeup.pdf)
+
+Prototype Writeup: [here](https://seanlowjk.github.io/piazza-rework/writeups/Prototype_Writeup.pdf)
+
+Website  Writeup: [here](https://seanlowjk.github.io/piazza-rework/writeups/Final_Writeup.pdf)
 
